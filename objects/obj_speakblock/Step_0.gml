@@ -1,3 +1,3 @@
-if position_meeting(mouse_x,mouse_y, id) && mouse_check_button_pressed(mb_left){
-	create_textbox(text_id)
+if instance_place(x, y, obj_Main) && (keyboard_check_pressed(vk_space) && !instance_exists(obj_txtbx)){
+	create_textbox(text_id,show_photo)
 }
